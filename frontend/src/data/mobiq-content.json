@@ -1,0 +1,213 @@
+{
+  "introTitle": "MOBIQ ENERGY HUB",
+  "introSubtitle": "Enerjinin Yolculuğu: Şebekeden Aracınıza",
+  "sections": [
+    {
+      "id": "yellow",
+      "label": "Temel",
+      "title": "Enerjinin Yolculuğu",
+      "description": "Şebekeden aracınıza: elektrik, trafo ve altyapı temelleri.",
+      "accent": "primary",
+      "cards": [
+        {
+          "title": "Elektrik Nedir?",
+          "body": "Elektrik, günlük hayatımızda kullandığımız en önemli enerji kaynaklarından biridir. Evlerimizdeki lambaları yakar, telefonlarımızı şarj eder, fabrikaları çalıştırır ve artık araçlarımızı hareket ettirir.",
+          "bullets": [
+            "Basit bir örnek vermek gerekirse; elektrik, suyun bir boru içerisindeki akışına benzer. Nasıl ki su bir noktadan diğerine taşınarak iş yapıyorsa, elektrik de kablolar aracılığıyla taşınarak cihazların çalışmasını sağlar."
+          ]
+        },
+        {
+          "title": "Trafo Nedir?",
+          "body": "Trafo (Transformatör), elektrik enerjisinin gerilimini yükselten veya düşüren cihazdır.",
+          "bullets": [
+            "Elektrik santrallerinden çıkan enerji çok yüksek gerilim seviyelerinde taşınır. Şehirlerde, fabrikalarda veya şarj istasyonlarında kullanılabilmesi için bu gerilimin uygun seviyelere dönüştürülmesi gerekir.",
+            "Kısacası trafo;",
+            "Elektriğin güvenli kullanılmasını sağlar,",
+            "Enerji kayıplarını azaltır,",
+            "Şarj istasyonlarına gerekli gücü ulaştırır.",
+            "Elektrikli araç şarj istasyonlarının temelinde de güçlü trafo sistemleri bulunmaktadır."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "label": "Enerji",
+      "title": "Enerji & Batarya",
+      "description": "Elektriğin şehirlere ulaşımı ve araç bataryalarında depolanması.",
+      "accent": "secondary",
+      "cards": [
+        {
+          "title": "Şebekeye Ulaşım",
+          "body": "Elektrik Evlerimize ve Şehirlerimize Nasıl Ulaşır?",
+          "bullets": [
+            "Elektrik, enerji santrallerinde üretilir ve uzun mesafeler boyunca iletim hatları üzerinden taşınır.",
+            "Ancak elektriğin doğrudan kullanılması mümkün değildir. Bu nedenle elektrik enerjisi farklı noktalarda dönüştürülür ve düzenlenir.",
+            "Bu noktada trafolar devreye girer."
+          ]
+        },
+        {
+          "title": "Araçlarda Enerji",
+          "body": "Elektrikli Araçlar Enerjiyi Nasıl Kullanır?",
+          "bullets": [
+            "Elektrikli araçların içerisinde enerji depolayan büyük bataryalar bulunur.",
+            "Bu bataryalar;",
+            "Elektrik enerjisini depolar,",
+            "Motoru besler,",
+            "Aracın hareket etmesini sağlar.",
+            "Yakıt deposunun görevini elektrikli araçlarda batarya üstlenir.",
+            "Batarya ne kadar büyükse araç o kadar uzun menzil sunabilir."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyan",
+      "label": "Şarj",
+      "title": "Şarj Altyapısı",
+      "description": "İstasyonların çalışma mantığı ve AC/DC şarj yöntemleri.",
+      "accent": "glow",
+      "cards": [
+        {
+          "title": "Şarj İstasyonları",
+          "body": "Şarj İstasyonları Nasıl Çalışır?",
+          "bullets": [
+            "Bir elektrikli araç şarj istasyonuna bağlandığında araç ve şarj ünitesi arasında iletişim başlar.",
+            "Sistem;",
+            "Bataryanın doluluk oranını kontrol eder,",
+            "Uygun şarj gücünü belirler,",
+            "Enerji kaynağını analiz eder,",
+            "Güvenli şarj sürecini başlatır.",
+            "Şarj işlemi boyunca sıcaklık, gerilim ve akım değerleri sürekli takip edilir.",
+            "Bu sayede hem araç hem de şarj altyapısı korunmuş olur."
+          ]
+        },
+        {
+          "title": "AC Şarj",
+          "body": "AC Şarj (Alternatif Akım)",
+          "bullets": [
+            "AC şarj, evlerde ve birçok halka açık şarj noktasında kullanılan yöntemdir.",
+            "Bu yöntemde elektrik önce araç içerisindeki dönüştürücüye gelir ve burada bataryanın kullanabileceği forma çevrilir.",
+            "Avantajları:",
+            "Daha ekonomiktir.",
+            "Ev kullanımı için uygundur.",
+            "Batarya üzerinde daha düşük yük oluşturur."
+          ]
+        },
+        {
+          "title": "DC Şarj",
+          "body": "DC Şarj (Doğru Akım)",
+          "bullets": [
+            "DC şarj sistemlerinde enerji doğrudan bataryaya aktarılır.",
+            "Bu nedenle çok daha hızlı şarj mümkündür.",
+            "Avantajları:",
+            "Kısa sürede yüksek enerji aktarımı sağlar.",
+            "Uzun yolculuklar için idealdir.",
+            "Ticari araçlar ve tırlar için uygundur.",
+            "MobiQ istasyonlarında hem AC hem de yüksek güçlü DC şarj çözümleri bulunmaktadır."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "darkGray",
+      "label": "Platform",
+      "title": "MobiQ Yazılımı",
+      "description": "Akıllı istasyon yönetimi ve rezervasyon.",
+      "accent": "muted",
+      "cards": [
+        {
+          "title": "Akıllı İstasyonlar",
+          "body": "MobiQ Smart Charging Stations",
+          "bullets": [
+            "MobiQ akıllı şarj istasyonları yalnızca enerji veren noktalar değildir.",
+            "Bu istasyonlar;",
+            "Araçları tanır,",
+            "Şarj ihtiyaçlarını analiz eder,",
+            "Enerji kullanımını optimize eder,",
+            "Kullanıcıları yönlendirir,",
+            "Şarj süreçlerini dijital olarak yönetir.",
+            "Böylece daha hızlı, daha güvenli ve daha verimli bir şarj deneyimi sunulur."
+          ]
+        },
+        {
+          "title": "Rezervasyon Sistemi",
+          "body": "MobiQ Rezervasyon Sistemi",
+          "bullets": [
+            "MobiQ, anlaşmalı şarj istasyonları ağı ile çalışan rezervasyon tabanlı bir sistem sunar.",
+            "Kullanıcılar mobil uygulama üzerinden;",
+            "En yakın istasyonları görüntüleyebilir,",
+            "Şarj noktalarının doluluk durumunu görebilir,",
+            "Tarih ve saat seçerek rezervasyon oluşturabilir,",
+            "Şarj işlemlerini önceden planlayabilir.",
+            "Bu sayede istasyonlarda bekleme süreleri azaltılır ve yoğunluk daha verimli yönetilir.",
+            "Özellikle filo yönetimi yapan şirketler ve uzun yol taşımacılığı gerçekleştiren araçlar için büyük kolaylık sağlar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magenta",
+      "label": "Hub",
+      "title": "MobiQ Energy Hub",
+      "description": "Geleceğin enerji merkezleri: üretim, depolama, yönetim.",
+      "accent": "primary",
+      "cards": [
+        {
+          "title": "Energy Hub",
+          "body": "MobiQ Energy Hub Nedir?",
+          "bullets": [
+            "MobiQ Energy Hub, geleceğin enerji merkezleri olarak tasarlanmıştır.",
+            "Bu merkezlerde;",
+            "Ultra hızlı DC şarj sistemleri,",
+            "AC şarj alanları,",
+            "Elektrikli otomobil şarj noktaları,",
+            "Elektrikli tır şarj alanları,",
+            "Enerji depolama sistemleri,",
+            "Güneş enerji santralleri,",
+            "Akıllı enerji yönetim yazılımları bir arada çalışır.",
+            "Amaç yalnızca araçları şarj etmek değil, enerjiyi en verimli şekilde üretmek, depolamak ve yönetmektir."
+          ]
+        },
+        {
+          "title": "Güneş & Depolama",
+          "body": "Güneş Enerjisi ve Akıllı Depolama",
+          "bullets": [
+            "MobiQ Hub'larda enerji yalnızca şebekeden alınmaz.",
+            "Çatılarda ve uygun alanlarda kurulan güneş panelleri elektrik üretir.",
+            "Üretilen enerji:",
+            "Öncelikle aktif şarj istasyonlarında kullanılır.",
+            "Fazla enerji depolama sistemlerine aktarılır.",
+            "İhtiyaç halinde tekrar sisteme verilir.",
+            "Bu yöntem hem maliyetleri düşürür hem de çevreye olan etkiyi azaltır."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "red",
+      "label": "Vizyon",
+      "title": "Geleceğin Ekosistemi",
+      "description": "Mobilite, depolama ve akıllı şehirlerin tek ağda buluşması.",
+      "accent": "vision",
+      "cards": [
+        {
+          "title": "Geleceğin Ekosistemi",
+          "body": "Geleceğin Enerji Ekosistemi",
+          "bullets": [
+            "MobiQ'un hedefi yalnızca bir şarj ağı kurmak değildir.",
+            "Gelecekte;",
+            "Elektrikli otomobiller,",
+            "Elektrikli tırlar,",
+            "Elektrikli otobüsler,",
+            "Otonom araçlar,",
+            "Akıllı şehir sistemleri,",
+            "Enerji depolama merkezleri aynı enerji ağı içerisinde çalışacaktır.",
+            "Araçlar yalnızca enerji tüketmeyecek, gerektiğinde enerji paylaşabilecek ve enerji depolama sisteminin bir parçası haline gelecektir.",
+            "MobiQ, enerjinin üretildiği, depolandığı, paylaşıldığı ve yönetildiği sürdürülebilir bir gelecek için yeni nesil enerji ve mobilite ekosistemi geliştirmektedir."
+          ]
+        }
+      ]
+    }
+  ]
+}

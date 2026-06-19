@@ -1,0 +1,32 @@
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Python
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Assets / temp
+*.zip
+assets/
+
+# Dokumantasyon — yalnizca README dosyalari repoda kalir
+*.md
+!README.md
+!**/README.md

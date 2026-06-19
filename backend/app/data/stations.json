@@ -1,0 +1,80 @@
+[
+  {
+    "id": "st-1",
+    "name": "MobiQ Hub - Tuzla Lojistik",
+    "province": "istanbul",
+    "district": "tuzla",
+    "lat": 40.8176,
+    "lng": 29.3003,
+    "powerType": "Mega DC",
+    "status": "available",
+    "powerKw": 350,
+    "queueMinutes": 0,
+    "truckCompatible": true
+  },
+  {
+    "id": "st-2",
+    "name": "MobiQ Hub - Pendik Marina",
+    "province": "istanbul",
+    "district": "pendik",
+    "lat": 40.8775,
+    "lng": 29.2339,
+    "powerType": "DC",
+    "status": "occupied",
+    "powerKw": 180,
+    "queueMinutes": 12,
+    "truckCompatible": false
+  },
+  {
+    "id": "st-3",
+    "name": "MobiQ Hub - Kadıköy Merkez",
+    "province": "istanbul",
+    "district": "kadikoy",
+    "lat": 40.9819,
+    "lng": 29.0296,
+    "powerType": "AC",
+    "status": "available",
+    "powerKw": 22,
+    "queueMinutes": 0,
+    "truckCompatible": false
+  },
+  {
+    "id": "st-4",
+    "name": "MobiQ Hub - Tuzla Depo",
+    "province": "istanbul",
+    "district": "tuzla",
+    "lat": 40.835,
+    "lng": 29.315,
+    "powerType": "Mega DC",
+    "status": "reserved",
+    "powerKw": 400,
+    "queueMinutes": 3,
+    "truckCompatible": true
+  },
+  {
+    "id": "st-5",
+    "name": "MobiQ Hub - Pendik OSB",
+    "province": "istanbul",
+    "district": "pendik",
+    "lat": 40.89,
+    "lng": 29.26,
+    "powerType": "DC",
+    "status": "available",
+    "powerKw": 150,
+    "queueMinutes": 0,
+    "truckCompatible": true
+  },
+  {
+    "id": "st-6",
+    "name": "MobiQ Hub - Kocaeli Gebze",
+    "province": "kocaeli",
+    "district": "gebze",
+    "lat": 40.8028,
+    "lng": 29.4308,
+    "powerType": "Mega DC",
+    "status": "available",
+    "powerKw": 350,
+    "queueMinutes": 0,
+    "truckCompatible": true
+  }
+]

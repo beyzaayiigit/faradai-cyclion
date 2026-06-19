@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: cyclion-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: CONTACT_TO_EMAIL
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: SMTP_FROM_NAME
+        value: CYCLION İletişim
+      - key: ALLOWED_ORIGINS
+        sync: false

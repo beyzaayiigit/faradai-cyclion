@@ -1,0 +1,72 @@
+[
+  {
+    "id": "m1",
+    "period": "0–6 Ay",
+    "title": "Pilot Lansman & Canlı Prototip",
+    "description": "MobiQ × RE-LITH entegre platformunun saha doğrulaması: gerçek istasyon verisi, akıllı şarj deneyimi ve batarya yönlendirme hattının ilk adımı.",
+    "phase": "current",
+    "focus": "MobiQ + RE-LITH",
+    "items": [
+      "Ankara gerçek istasyon haritası; İstanbul/Kocaeli pilot koridoru",
+      "Akıllı filtre, doluluk simülasyonu ve demo rezervasyon akışı",
+      "RE-LITH AI teşhis: ikinci ömür veya geri dönüşüm rotası",
+      "Yatırımcı ve filo ortakları için kapalı döngü demosu"
+    ]
+  },
+  {
+    "id": "m2",
+    "period": "6–18 Ay",
+    "title": "Ağ Genişlemesi & Filo Entegrasyonu",
+    "description": "Şarj ağının ticari filolara ölçeklenmesi; RE-LITH'te güvenli deşarj ve black mass hattının devreye alınması.",
+    "phase": "future",
+    "focus": "MobiQ",
+    "items": [
+      "Mega DC ve tır uyumlu MobiQ Energy Hub noktaları",
+      "Filo API: anlık doluluk, rezervasyon ve rota optimizasyonu",
+      "Anlaşmalı operatör ağı ve mobil uygulama entegrasyonu",
+      "RE-LITH: kontrollü deşarj ve mekanik parçalama (black mass)"
+    ]
+  },
+  {
+    "id": "m3",
+    "period": "18–36 Ay",
+    "title": "Yeşil Kimya & Bölgesel Ölçek",
+    "description": "DES tabanlı geri kazanımın ölçeklenmesi; battery-grade hammadde ile bölgesel enerji depolama ve şarj ağının birleşmesi.",
+    "phase": "future",
+    "focus": "RE-LITH",
+    "items": [
+      "Green Chemistry (DES) pilot tesis → lityum, nikel, kobalt saflaştırma",
+      "İkinci ömür bataryaların grid destek ve EnergyPack uygulamaları",
+      "Güneş + akıllı depolama ile hub enerji bağımsızlığı",
+      "Marmara ve Ankara koridorunda tam operasyonel kapsama"
+    ]
+  },
+  {
+    "id": "m4",
+    "period": "3–7 Yıl",
+    "title": "Ulusal Kapalı Döngü Ağı",
+    "description": "Türkiye genelinde şarj, geri dönüşüm ve hammadde kazanımının tek ekosistemde birleşmesi.",
+    "phase": "future",
+    "focus": "MobiQ × RE-LITH",
+    "items": [
+      "Çok şehirli şarj omurgası ve ulusal filo sözleşmeleri",
+      "Atık batarya → battery-grade hammadde → yeni depolama döngüsü",
+      "%0 yakma standardıyla sürdürülebilir geri kazanım kapasitesi",
+      "Stratejik lityum ve kobalt arz güvenliği (yerli kaynak)"
+    ]
+  },
+  {
+    "id": "m5",
+    "period": "7+ Yıl",
+    "title": "Akıllı Enerji Altyapısı Vizyonu",
+    "description": "Araçların yalnızca tüketmediği, enerji paylaştığı ve şehir altyapısıyla konuştuğu nesil.",
+    "phase": "vision",
+    "focus": "Ekosistem",
+    "items": [
+      "V2G ve bölgesel enerji piyasası entegrasyonu",
+      "Otonom filo, elektrikli tır ve akıllı şehir sistemleri",
+      "Ulusal enerji depolama ve şarjın tek veri platformu",
+      "Karbon-nötr lojistik ve mobilite standardı"
+    ]
+  }
+]
