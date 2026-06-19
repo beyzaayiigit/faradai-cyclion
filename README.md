@@ -84,9 +84,10 @@ Repoyu kendiniz oluşturup push edin. `.env` dosyaları commit edilmemeli (`.git
 | Key | Açıklama |
 |-----|----------|
 | `CONTACT_TO_EMAIL` | Mailin gideceği adres |
-| `SMTP_USER` | Gmail adresi |
-| `SMTP_PASSWORD` | Gmail uygulama şifresi (16 hane) |
+| `RESEND_API_KEY` | [Resend](https://resend.com/api-keys) API anahtarı |
 | `ALLOWED_ORIGINS` | Vercel URL + `http://localhost:3000` |
+
+> Render free tier Gmail SMTP engeller; `RESEND_API_KEY` kullanın.
 
 4. Deploy sonrası test: `https://API-URL/health` → `{"status":"ok"}`
 
@@ -114,7 +115,7 @@ https://siteniz.vercel.app,http://localhost:3000
 | Sorun | Kontrol |
 |--------|---------|
 | Form hata veriyor | Vercel'de `BACKEND_URL`, Render'da `/health` |
-| Mail gelmiyor | Render'da `SMTP_*` değişkenleri |
+| Mail gelmiyor | Render'da `RESEND_API_KEY` doğru mu? |
 | İlk istek çok yavaş | Render free tier uyku modundan uyanıyor (~1 dk) |
 
 ---

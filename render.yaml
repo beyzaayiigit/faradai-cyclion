@@ -9,11 +9,9 @@ services:
     envVars:
       - key: CONTACT_TO_EMAIL
         sync: false
-      - key: SMTP_USER
+      - key: RESEND_API_KEY
         sync: false
-      - key: SMTP_PASSWORD
-        sync: false
-      - key: SMTP_FROM_NAME
-        value: CYCLION İletişim
+      - key: RESEND_FROM_EMAIL
+        value: CYCLION İletişim <onboarding@resend.dev>
       - key: ALLOWED_ORIGINS
         sync: false

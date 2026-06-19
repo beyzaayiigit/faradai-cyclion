@@ -5,6 +5,9 @@ const BACKEND_URL =
   process.env.NEXT_PUBLIC_API_URL ||
   "http://127.0.0.1:8000";
 
+// Render uyandirma + SMTP icin daha uzun sure (Vercel plan limitine tabidir)
+export const maxDuration = 60;
+
 export async function POST(request: Request) {
   let body: unknown;
   try {
@@ -18,6 +21,7 @@ export async function POST(request: Request) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
+      signal: AbortSignal.timeout(55_000),
     });
 
     if (!res.ok) {

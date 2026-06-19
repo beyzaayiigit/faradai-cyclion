@@ -24,4 +24,4 @@ app.include_router(contact.router, prefix="/api/v1")
 
 @app.get("/health")
 def health() -> dict[str, str]:
-    return {"status": "ok"}
+    return {"status": "ok", "email_provider": settings.email_provider}

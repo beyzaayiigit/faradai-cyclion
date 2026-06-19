@@ -21,44 +21,49 @@ uv run uvicorn app.main:app --reload --port 8000
 
 ---
 
-## İletişim formu (Gmail SMTP)
+## İletişim formu — e-posta
 
-Form mesajları `.env` içindeki `CONTACT_TO_EMAIL` adresine gider.
+Form mesajları `CONTACT_TO_EMAIL` adresine gider. İki yöntem desteklenir:
 
-### 1. `.env` oluşturun
+| Yöntem | Ne zaman? |
+|--------|-----------|
+| **Resend API** | Production (Render free tier) — `RESEND_API_KEY` varsa öncelikli |
+| **Gmail SMTP** | Yerel geliştirme — Render free tier SMTP engeller |
 
-```powershell
-copy .env.example .env
+### Production: Resend (önerilen)
+
+1. [resend.com](https://resend.com) → kayıt (alıcı Gmail ile aynı hesap önerilir)
+2. **API Keys** → yeni key → `RESEND_API_KEY`
+3. Render Environment:
+
+```env
+CONTACT_TO_EMAIL=bbeyzaayigitt@gmail.com
+RESEND_API_KEY=re_xxxxxxxx
+RESEND_FROM_EMAIL=CYCLION İletişim <onboarding@resend.dev>
+ALLOWED_ORIGINS=https://siteniz.vercel.app,http://localhost:3000
 ```
 
-### 2. Gmail uygulama şifresi
+> Domain doğrulamadan `onboarding@resend.dev` gönderici olarak kullanılır; alıcı Resend hesabınızdaki e-posta olmalıdır.
 
-1. [Google Hesabı → Güvenlik](https://myaccount.google.com/security)
-2. **2 Adımlı Doğrulama** açık olmalı
-3. [Uygulama şifreleri](https://myaccount.google.com/apppasswords) → yeni şifre oluşturun
-4. 16 haneli şifreyi `SMTP_PASSWORD` olarak `.env`'e yazın
+### Yerel: Gmail SMTP
 
-### 3. Örnek `.env`
+1. `.env` oluşturun: `copy .env.example .env`
+2. [Uygulama şifresi](https://myaccount.google.com/apppasswords) alın
+3. `RESEND_API_KEY` boş bırakın, SMTP alanlarını doldurun:
 
 ```env
 CONTACT_TO_EMAIL=ornek@gmail.com
 SMTP_USER=ornek@gmail.com
 SMTP_PASSWORD=abcdefghijklmnop
-SMTP_FROM_NAME=CYCLION İletişim
-ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
 ```
 
-> Normal Gmail şifresi çalışmaz — yalnızca **uygulama şifresi** kullanın.
-
-### 4. Frontend bağlantısı
+### Frontend bağlantısı
 
 `frontend/.env.local`:
 
 ```env
 BACKEND_URL=http://127.0.0.1:8000
 ```
-
-Frontend iletişim isteklerini `/api/contact` üzerinden bu adrese iletir.
 
 ---
 
@@ -79,17 +84,13 @@ Başarılı yanıt: `{ "ok": true }`
 
 E-posta konusu: `CYCLION — Yeni iletişim: [Ad Soyad]`
 
-### `GET /api/v1/stations`
-
-Query parametreleri: `province`, `district`, `power_type`, `status`
-
 ---
 
 ## Production (Render)
 
 - `render.yaml` + `Dockerfile` ile deploy
-- Zorunlu env: `CONTACT_TO_EMAIL`, `SMTP_USER`, `SMTP_PASSWORD`, `ALLOWED_ORIGINS`
-- `ALLOWED_ORIGINS` içine Vercel site URL'nizi ekleyin (`https://...`)
+- Zorunlu env: `CONTACT_TO_EMAIL`, `RESEND_API_KEY`, `ALLOWED_ORIGINS`
+- Gmail SMTP Render free tier'da **çalışmaz**
 
 Deploy rehberi → [`../README.md`](../README.md)
 
@@ -100,7 +101,7 @@ Deploy rehberi → [`../README.md`](../README.md)
 ```
 app/
 ├── api/v1/       contact, stations route'ları
-├── core/         config (SMTP, CORS)
+├── core/         config (Resend, SMTP, CORS)
 ├── services/     e-posta gönderimi
 ├── schemas/      Pydantic modelleri
 └── data/         stations.json
